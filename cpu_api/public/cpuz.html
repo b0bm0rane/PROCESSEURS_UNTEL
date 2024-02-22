@@ -18,18 +18,18 @@
             <div id="bloc" v-for="cpu of listeCpu">
                 <div>
                     <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}}</h2>
-                    <p>ID : {{cpu.idCpu}}</p>
-                    <p>Frequency : {{cpu.ghz}} Ghz</p>
-                    <p>Price : {{cpu.price}}€</p>
-                    <p>Stock : </p>
+                    <p class="pliste">ID : {{cpu.idCpu}}</p>
+                    <p class="pliste">Frequency : {{cpu.ghz}} Ghz</p>
+                    <p class="pliste">Price : {{cpu.price}}€</p>
+                    <p class="pliste">Stock : </p>
                 </div>
             </div>
         </div>
         
         <div id="inventaire">
             <h3>Inventory management</h3>
-            <p>1. Select a CPU</p>
-            <p>2. Edit the number of units in stock</p>
+            <p class="pinventaire">1. Select a CPU</p>
+            <p class="pinventaire">2. Edit the number of units in stock</p>
             <select name="cpu" id="cpu">
                 <option value="cpu">Select a CPU</option>
                 <option v-for="cpu of listeCpu" value="">{{cpu.brand}} {{cpu.family}} {{cpu.model}}</option>

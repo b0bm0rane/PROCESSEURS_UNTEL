@@ -40,7 +40,9 @@ h2{
     background-color: #0079bc;
     color: #00008b;
     margin-top: 0;
-    height: 50px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 #inventaire{
@@ -58,4 +60,8 @@ select{
     height: 40px;
     width: 200px;
     margin-right: 20px;
+}
+
+.pliste{
+    padding-left: 50px;
 }
