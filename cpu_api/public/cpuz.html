@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script src="./assets/JS/main.js" type="module"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body id="app">
+    <header>
+        <h1>List of the 9 CPUs manufactured On Mulhouse</h1>
+    </header>
+
+    <main>
+        <div id="liste">
+            <div id="bloc" v-for="cpu of listeCpu">
+                <div>
+                    <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}}</h2>
+                    <p>ID : {{cpu.idCpu}}</p>
+                    <p>Frequency : {{cpu.ghz}} Ghz</p>
+                    <p>Price : {{cpu.price}}€</p>
+                    <p>Stock : </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="inventaire">
+            <h3>Inventory management</h3>
+            <p>1. Select a CPU</p>
+            <p>2. Edit the number of units in stock</p>
+            <select name="cpu" id="cpu">
+                <option value="cpu">Select a CPU</option>
+                <option v-for="cpu of listeCpu" value="">{{cpu.brand}} {{cpu.family}} {{cpu.model}}</option>
+            </select>
+            <input type="number" name="unite" id="unite" placeholder="0" min="0">
+            <label for="unite">unit(s) in stock </label>
+        </div>
+    </main>
+</body>
+</html>

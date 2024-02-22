@@ -1,0 +1,61 @@
+/* Couleurs à utiliser :
+
+Bleu clair : #0079bc
+Bleu clair transparent : #0079bc55
+Bleu foncé : #00008b
+Rouge : #FF0000 */
+
+body{
+    background-color: #0079bc55;
+}
+
+header{
+    height: 200px;
+    background-image: url("../img/banner.jpg");
+}
+
+h1{
+    background-color: #00008b;
+    color: #0079bc;
+    width: 650px;
+    height: 50px;
+    border-radius: 0 0 30% 0;
+}
+
+#bloc{
+    background-color: #0079bc55;
+    width: 350px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 0 0 50% 0;
+    border: solid 1px #FF0000;
+}
+
+#liste{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    background-color: #0079bc;
+    color: #00008b;
+    margin-top: 0;
+    height: 50px;
+}
+
+#inventaire{
+    height: 40px;
+    background-image: url("../img/banner.jpg");
+}
+
+select{
+    height: 50px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+#unite{
+    height: 40px;
+    width: 200px;
+    margin-right: 20px;
+}
