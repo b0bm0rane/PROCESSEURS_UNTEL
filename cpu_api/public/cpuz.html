@@ -17,11 +17,11 @@
         <div id="liste">
             <div id="bloc" v-for="cpu of listeCpu">
                 <div>
-                    <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}}</h2>
-                    <p class="pliste">ID : {{cpu.idCpu}}</p>
-                    <p class="pliste">Frequency : {{cpu.ghz}} Ghz</p>
-                    <p class="pliste">Price : {{cpu.price}}€</p>
-                    <p class="pliste">Stock : </p>
+                    <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}} <img src="./assets/img/"{{cpu.brand}}.svg alt="logo"></h2>
+                    <p class="pliste"><span>ID : </span>{{cpu.idCpu}}</p>
+                    <p class="pliste"><span>Frequency : </span>{{cpu.ghz}} Ghz</p>
+                    <p class="pliste"><span>Price : </span>{{cpu.price}}€</p>
+                    <p class="pliste"><span>Stock : </span></p>
                 </div>
             </div>
         </div>
