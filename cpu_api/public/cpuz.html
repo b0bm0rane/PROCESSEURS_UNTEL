@@ -10,18 +10,26 @@
 </head>
 <body id="app">
     <header>
-        <h1>List of the 9 CPUs manufactured On Mulhouse</h1>
+        <h1>List of the {{listeCpu.length}} CPUs manufactured On Mulhouse</h1>
     </header>
 
     <main>
         <div id="liste">
             <div id="bloc" v-for="cpu of listeCpu">
                 <div>
-                    <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}} <img src="./assets/img/"{{cpu.brand}}.svg alt="logo"></h2>
+                    <h2>{{cpu.brand}} {{cpu.family}} {{cpu.model}}</h2>
+                        <div :class="cpu.brand"></div>
+                    
+
+                    <!-- <div>
+                        <img id="logo" src="assets/img/intel.svg" alt="logo">
+                        <img id="logo" src="assets/img/{{cpu.brand}}.svg" alt="logo">
+                    </div> -->
+                        
                     <p class="pliste"><span>ID : </span>{{cpu.idCpu}}</p>
                     <p class="pliste"><span>Frequency : </span>{{cpu.ghz}} Ghz</p>
                     <p class="pliste"><span>Price : </span>{{cpu.price}}€</p>
-                    <p class="pliste"><span>Stock : </span></p>
+                    <p class="pliste"><span>Stock : {{stock}}</span></p>
                 </div>
             </div>
         </div>
@@ -34,8 +42,9 @@
                 <option value="cpu">Select a CPU</option>
                 <option v-for="cpu of listeCpu" value="">{{cpu.brand}} {{cpu.family}} {{cpu.model}}</option>
             </select>
-            <input type="number" name="unite" id="unite" placeholder="0" min="0">
-            <label for="unite">unit(s) in stock </label>
+            <!-- <input type="number" name="unite" id="unite" placeholder="0" min="0"> -->
+            <input v-model="stock" name="stock" id="stock" placeholder="0" min="0">
+            <label for="stock">unit(s) in stock </label>
         </div>
     </main>
 </body>

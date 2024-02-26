@@ -5,7 +5,8 @@ const cpuUrl = 'http://localhost:3000/api/cpus';
 const app = {
     data() {
         return {
-            listeCpu:[]
+            listeCpu:[],
+            stock: 0
         }
     },
     async mounted() {

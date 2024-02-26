@@ -7,6 +7,8 @@ class CPU
         this.model = cpu.model;
         this.ghz = cpu.ghz;
         this.price = cpu.price;
+
+        // this.stock = cpu.stock;
     }
 }
 export {CPU}
