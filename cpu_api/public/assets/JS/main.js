@@ -3,10 +3,17 @@ import {CPU} from "./CPU.js";
 const cpuUrl = 'http://localhost:3000/api/cpus';
 
 const app = {
+    // data() {
+    //     return {
+    //         listeCpu:[],
+    //         stock: 0
+    //     }
+    // },
     data() {
         return {
             listeCpu:[],
-            stock: 0
+            stock: 0,
+            cpuSelected: null
         }
     },
     async mounted() {

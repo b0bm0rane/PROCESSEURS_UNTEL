@@ -77,7 +77,7 @@ span{
     height: 50px;
 }
 
-.AMD,
+/* .AMD,
 .INTEL {
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,13 +88,30 @@ span{
     width: 70px;
     background-position-y: -10px;
     background-image: url("../img/amd.svg");
-    /* background-image: url("https://raw.githubusercontent.com/ARFP/arfp.github.io/e063b76fbb6a64cf0f7dd503354413f72a05d52c/docs/tp/web/api/api-cpuz/amd.svg"); */
+    background-image: url("https://raw.githubusercontent.com/ARFP/arfp.github.io/e063b76fbb6a64cf0f7dd503354413f72a05d52c/docs/tp/web/api/api-cpuz/amd.svg");
 }
 
 .INTEL {
     height: 50px;
     width: 50px;
     background-image: url("../img/intel.svg");
+    background-image: url("https://raw.githubusercontent.com/ARFP/arfp.github.io/e063b76fbb6a64cf0f7dd503354413f72a05d52c/docs/tp/web/api/api-cpuz/intel.svg");
+}
+  */
+
+  .AMD,
+.INTEL {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+ .AMD {
+    background-image: url("../img/amd.svg");
+    /* background-image: url("https://raw.githubusercontent.com/ARFP/arfp.github.io/e063b76fbb6a64cf0f7dd503354413f72a05d52c/docs/tp/web/api/api-cpuz/amd.svg"); */
+}
+
+.INTEL {
+    background-image: url("../img/intel.svg");
     /* background-image: url("https://raw.githubusercontent.com/ARFP/arfp.github.io/e063b76fbb6a64cf0f7dd503354413f72a05d52c/docs/tp/web/api/api-cpuz/intel.svg"); */
 }
- 
